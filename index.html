@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <script src="https://kit.fontawesome.com/0487d6cc97.js" crossorigin="anonymous"></script>
+    <style>
+        .login-form{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            
+            padding: 5px;
+        }
+        .login-form input{
+            margin-top: 5px;
+            font-size: 1.5em;
+            padding: 5px 10px;
+        }
+        .login-form input[type="submit"]
+        {
+            background-color: blueviolet;
+            border: 0;
+            border-radius: 5px;
+            color: aliceblue;
+            font-weight: 700;
+            width: 50%;
+            align-items: center;
+            border-radius: 10px;
+        }
+        .login-form input[type="submit"]:hover{
+            color: rgba(7, 16, 16, 0.79);
+           background-image: linear-gradient(blue,rgb(0, 109, 128));
+            
+        }
+        .login-container{
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            
+        }
+        nav a{
+            text-decoration: none;
+            margin-right: 10px;
+            color: rgb(246, 244, 244);
+            font-size: 30px;
+            
+        }
+        nav a:hover{
+            background-image: linear-gradient(blueviolet,purple);
+        
+            border-radius: 10px;
+            color:black
+            
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+        }
+       
+       body{
+        background-color: rgba(1, 1, 15, 0.992);
+       }
+       h2{
+        color: aliceblue;
+       }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <span class="home-panels">
+            <a href="">Home</a>
+            <a href="https://adibmahmud007.github.io/Developer-Portfolio/?fbclid=IwAR1VMiqZDwPpt4mNUBJzdFinRdjmdTqp28BkIn8w8oqNry-st62EDR1TvSM" target="_blank">Profile</a>
+            <a href="">Dashboard</a>
+            </span>
+            <span>
+            <a href="https://www.facebook.com/adib.mahmud.3139/" target="framename"><i class="fa-solid fa-user"></i></a>
+            <a href=""><i class="fa-solid fa-right-from-bracket"></i></a></span>
+        </nav>
+    </header>
+    <section class="login-container">
+        <form  class="login-form">
+            <h2>Please Login</h2>
+            <input type="email" name="" id="" placeholder="Enter Email..." required>
+            <input type="password" name="" id="" placeholder="Enter Password.."required>
+            <input type="submit" value="Login">
+        </form>
+    </section>
+</body>
+</html>
